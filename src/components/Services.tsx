@@ -4,25 +4,24 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    title: "Executive Coaching",
+    title: "Startup Launch Strategy",
     description:
-      "One-on-one partnership designed to sharpen your leadership identity, decision-making, and presence at the highest levels.",
+      "For aspiring entrepreneurs — turn your idea into a real plan. We help you validate the concept, define your offer, and map the first steps to get off the ground.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
-        <circle cx="24" cy="16" r="8" stroke="currentColor" strokeWidth="2" />
         <path
-          d="M8 40c0-8.837 7.163-14 16-14s16 5.163 16 14"
+          d="M24 4l5 11 12 1.5-9 8.5 2.5 12L24 31l-10.5 6L16 25 7 16.5 19 15l5-11z"
           stroke="currentColor"
           strokeWidth="2"
-          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     ),
   },
   {
-    title: "Team Performance",
+    title: "Growth & Operations",
     description:
-      "Align your leadership team around a shared vision, sharpen communication, and build a culture that compounds results.",
+      "For young businesses that are up and running but not sure what's next. We help you build the systems, priorities, and roadmap to grow with confidence.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
         <circle cx="16" cy="18" r="6" stroke="currentColor" strokeWidth="2" />
@@ -39,7 +38,7 @@ const services = [
   {
     title: "Business Strategy",
     description:
-      "Cut through the noise with a clear, executable roadmap — built around your market position, unit economics, and growth levers.",
+      "Cut through the noise with a clear, executable plan — built around your market position, finances, and the growth levers that matter most right now.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-10 w-10">
         <path

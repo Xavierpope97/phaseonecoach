@@ -67,18 +67,18 @@ export default function Hero() {
 
       <div className="relative z-10 flex flex-col items-center gap-2 font-display font-black leading-[0.95] tracking-tight">
         <AnimatedLine
-          words={["We", "Build"]}
+          words={["From", "Idea"]}
           className="text-[clamp(48px,9vw,120px)] text-text"
           delayStart={0.2}
         />
         <AnimatedLine
-          words={["LEADERS"]}
+          words={["TO", "BUSINESS"]}
           className="text-stroke text-[clamp(56px,10vw,140px)]"
           delayStart={0.5}
         />
         <AnimatedLine
-          words={["Not", "Followers"]}
-          className="text-[clamp(48px,9vw,120px)] text-text"
+          words={["We'll", "Get", "You", "There"]}
+          className="text-[clamp(40px,8vw,110px)] text-text"
           delayStart={0.7}
         />
       </div>
@@ -89,8 +89,8 @@ export default function Hero() {
         transition={{ delay: 1.4, duration: 0.8 }}
         className="relative z-10 mt-8 max-w-xl font-light text-base text-muted md:text-lg"
       >
-        High-performance coaching for founders and executives who are done
-        playing small.
+        Business consulting for aspiring entrepreneurs and young companies
+        figuring out their next move.
       </motion.p>
 
       <motion.div
@@ -109,7 +109,7 @@ export default function Hero() {
           href="#philosophy"
           className="rounded-full border border-text/20 px-8 py-4 text-sm font-medium tracking-wide text-text transition-colors duration-300 hover:border-highlight hover:text-highlight"
         >
-          Watch Our Story
+          How We Help
         </a>
       </motion.div>
 

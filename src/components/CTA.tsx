@@ -39,7 +39,7 @@ export default function CTA() {
         transition={{ duration: 0.8 }}
         className="relative z-10 mx-auto max-w-4xl font-display text-[clamp(36px,7vw,96px)] font-black leading-[1.05] tracking-tight"
       >
-        Ready to become the leader your business needs?
+        Ready to figure out your next move?
       </motion.h2>
 
       <motion.p
@@ -49,8 +49,8 @@ export default function CTA() {
         transition={{ duration: 0.8, delay: 0.1 }}
         className="relative z-10 mx-auto mt-6 max-w-xl font-light text-muted"
       >
-        Book a complimentary strategy call. No pitch — just clarity on what
-        your next level looks like.
+        Book a free consultation. No pitch — just clarity on what&rsquo;s next
+        for your business.
       </motion.p>
 
       <motion.form
@@ -88,7 +88,7 @@ export default function CTA() {
           disabled={pending}
           className="mt-2 inline-block rounded-full bg-gradient-to-r from-primary to-accent px-10 py-5 text-sm font-medium tracking-wide text-text transition-transform duration-300 hover:scale-105 disabled:cursor-not-allowed disabled:opacity-60"
         >
-          {pending ? "Sending..." : "Book Your Strategy Call"}
+          {pending ? "Sending..." : "Book Your Free Consultation"}
         </button>
 
         {state.status === "success" && (

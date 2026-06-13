@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import Counter from "./Counter";
 
 const stats = [
-  { value: 500, suffix: "+", label: "Clients Coached" },
-  { value: 12, suffix: "", label: "Years in Business" },
-  { value: 2, suffix: "B+", prefix: "$", label: "Revenue Unlocked" },
-  { value: 97, suffix: "%", label: "Client Retention" },
+  { value: 150, suffix: "+", label: "Startups Guided" },
+  { value: 8, suffix: "", label: "Years Helping Founders" },
+  { value: 40, suffix: "+", label: "Industries Served" },
+  { value: 95, suffix: "%", label: "Client Satisfaction" },
 ];
 
 export default function About() {
@@ -21,10 +21,10 @@ export default function About() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="font-display text-[clamp(36px,6vw,80px)] font-black leading-[1.05] tracking-tight"
         >
-          Coaching isn&rsquo;t a service.
+          Consulting isn&rsquo;t a service.
           <br />
           It&rsquo;s a{" "}
-          <span className="gradient-text">transformation.</span>
+          <span className="gradient-text">foundation.</span>
         </motion.h2>
 
         <div className="mt-20 grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-24">
@@ -38,11 +38,7 @@ export default function About() {
                 transition={{ duration: 0.6, delay: i * 0.1 }}
               >
                 <div className="font-display text-4xl font-black text-highlight md:text-5xl">
-                  <Counter
-                    to={stat.value}
-                    suffix={stat.suffix}
-                    prefix={stat.prefix}
-                  />
+                  <Counter to={stat.value} suffix={stat.suffix} />
                 </div>
                 <p className="mt-2 text-sm font-light uppercase tracking-[0.2em] text-muted">
                   {stat.label}
@@ -59,17 +55,17 @@ export default function About() {
             className="flex flex-col gap-6"
           >
             <p className="font-light text-lg leading-relaxed text-text/80 md:text-xl">
-              We don&rsquo;t do generic frameworks or recycled advice. Every
-              engagement is built around the specific mountain you&rsquo;re
-              climbing — whether that&rsquo;s scaling a team, sharpening your
-              leadership presence, or rebuilding a business model from the
-              ground up.
+              We work with aspiring entrepreneurs who have an idea and don&rsquo;t
+              know where to start, and with young businesses that are up and
+              running but stuck on what comes next. Every engagement is built
+              around your specific stage, market, and goals — not a generic
+              playbook.
             </p>
             <p className="font-light text-base leading-relaxed text-muted">
-              Our coaches have sat in the rooms where decisions get made.
-              They&rsquo;ve built, sold, and scaled companies of their own.
-              You won&rsquo;t get theory — you&rsquo;ll get a partner who has
-              lived it.
+              Our consultants have started, run, and grown businesses of their
+              own. You won&rsquo;t get theory — you&rsquo;ll get a partner who
+              helps you make the right calls early, so you&rsquo;re not
+              rebuilding the foundation later.
             </p>
           </motion.div>
         </div>

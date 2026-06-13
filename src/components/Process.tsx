@@ -13,19 +13,19 @@ const steps = [
     number: "02",
     title: "Design",
     description:
-      "A bespoke coaching roadmap built around your specific challenges, timeline, and definition of success.",
+      "A clear plan built around your specific stage, challenges, timeline, and definition of success.",
   },
   {
     number: "03",
     title: "Execute",
     description:
-      "Weekly sessions, real-time feedback, and accountability systems that turn insight into consistent action.",
+      "Hands-on sessions, real-time feedback, and accountability systems that turn the plan into consistent action.",
   },
   {
     number: "04",
     title: "Elevate",
     description:
-      "We measure, refine, and raise the bar — locking in new habits and unlocking the next level of growth.",
+      "We measure, refine, and adjust — making sure your business is set up to grow into its next stage.",
   },
 ];
 

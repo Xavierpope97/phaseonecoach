@@ -3,11 +3,11 @@ export default function Footer() {
     <footer className="relative border-t border-white/5 px-6 py-12 md:px-10">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row">
         <a href="#" className="font-display text-xl font-black tracking-tight">
-          APEX<span className="text-accent">.</span>
+          PHASE ONE<span className="text-accent">.</span>
         </a>
 
         <p className="font-light text-sm text-muted">
-          © {new Date().getFullYear()} Apex Coaching. All rights reserved.
+          © {new Date().getFullYear()} Phase One Coaching. All rights reserved.
         </p>
 
         <div className="flex items-center gap-6 text-sm font-light text-muted">

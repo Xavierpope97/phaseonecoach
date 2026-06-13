@@ -35,7 +35,7 @@ export default function Navbar() {
           href="#"
           className="font-display text-2xl font-black tracking-tight text-text"
         >
-          APEX<span className="text-accent">.</span>
+          PHASE ONE<span className="text-accent">.</span>
         </a>
 
         <ul className="hidden items-center gap-10 md:flex">

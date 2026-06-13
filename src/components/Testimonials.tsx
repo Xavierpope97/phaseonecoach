@@ -6,21 +6,21 @@ import { AnimatePresence, motion } from "framer-motion";
 const testimonials = [
   {
     quote:
-      "Apex didn't just help me become a better leader — they rebuilt how I think about decisions entirely. Our revenue grew 3x in eighteen months.",
+      "I had an idea and no clue where to start. Phase One helped me turn it into an actual business plan — and three months later I had my first paying customers.",
     name: "Sarah Chen",
-    title: "CEO, Northwind Labs",
+    title: "Founder, Northwind Goods",
   },
   {
     quote:
-      "The clarity I got from this program is something I couldn't have found anywhere else. It's not coaching, it's a complete operating system upgrade.",
+      "We'd been running for two years but felt stuck. Phase One gave us a clear roadmap and helped us finally build systems that don't depend on us doing everything.",
     name: "Marcus Reyes",
-    title: "Founder, Halcyon Group",
+    title: "Co-Founder, Halcyon Studio",
   },
   {
     quote:
-      "Our leadership team finally moves like one unit. The alignment work alone was worth ten times the investment.",
+      "The clarity we got from working with Phase One was worth more than any advice we'd gotten before. We finally know what to focus on next.",
     name: "Priya Anand",
-    title: "COO, Verge Dynamics",
+    title: "Owner, Verge Coffee Co.",
   },
 ];
 

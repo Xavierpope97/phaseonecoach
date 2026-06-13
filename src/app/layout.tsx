@@ -9,9 +9,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Apex Coaching — We Build Leaders, Not Followers",
+  title: "Phase One Coaching — Business Consulting for Startups & Founders",
   description:
-    "Executive coaching, team performance, and business strategy for founders and leaders who refuse to settle.",
+    "Business consulting for aspiring entrepreneurs and early-stage companies. We help you go from idea to a business that works.",
 };
 
 export default function RootLayout({
