@@ -1,8 +1,17 @@
 "use client";
 
+import { useActionState } from "react";
 import { motion } from "framer-motion";
+import { submitContactForm, type ContactFormState } from "@/app/actions";
+
+const initialState: ContactFormState = { status: "idle" };
 
 export default function CTA() {
+  const [state, formAction, pending] = useActionState(
+    submitContactForm,
+    initialState
+  );
+
   return (
     <section
       id="contact"
@@ -44,20 +53,51 @@ export default function CTA() {
         your next level looks like.
       </motion.p>
 
-      <motion.div
+      <motion.form
+        action={formAction}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="relative z-10 mt-10"
+        className="relative z-10 mx-auto mt-12 flex max-w-xl flex-col gap-4 text-left"
       >
-        <a
-          href="mailto:hello@apexcoaching.com"
-          className="inline-block rounded-full bg-gradient-to-r from-primary to-accent px-10 py-5 text-sm font-medium tracking-wide text-text transition-transform duration-300 hover:scale-105"
+        <input
+          type="text"
+          name="name"
+          placeholder="Your name"
+          required
+          className="rounded-xl border border-white/10 bg-surface px-5 py-4 text-sm text-text placeholder:text-muted focus:border-accent focus:outline-none"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your email"
+          required
+          className="rounded-xl border border-white/10 bg-surface px-5 py-4 text-sm text-text placeholder:text-muted focus:border-accent focus:outline-none"
+        />
+        <textarea
+          name="message"
+          placeholder="What are you looking to achieve?"
+          required
+          rows={4}
+          className="rounded-xl border border-white/10 bg-surface px-5 py-4 text-sm text-text placeholder:text-muted focus:border-accent focus:outline-none"
+        />
+
+        <button
+          type="submit"
+          disabled={pending}
+          className="mt-2 inline-block rounded-full bg-gradient-to-r from-primary to-accent px-10 py-5 text-sm font-medium tracking-wide text-text transition-transform duration-300 hover:scale-105 disabled:cursor-not-allowed disabled:opacity-60"
         >
-          Book Your Strategy Call
-        </a>
-      </motion.div>
+          {pending ? "Sending..." : "Book Your Strategy Call"}
+        </button>
+
+        {state.status === "success" && (
+          <p className="text-sm font-light text-highlight">{state.message}</p>
+        )}
+        {state.status === "error" && (
+          <p className="text-sm font-light text-red-400">{state.message}</p>
+        )}
+      </motion.form>
     </section>
   );
 }
