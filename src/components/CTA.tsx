@@ -1,17 +1,8 @@
 "use client";
 
-import { useActionState } from "react";
 import { motion } from "framer-motion";
-import { submitContactForm, type ContactFormState } from "@/app/actions";
-
-const initialState: ContactFormState = { status: "idle" };
 
 export default function CTA() {
-  const [state, formAction, pending] = useActionState(
-    submitContactForm,
-    initialState
-  );
-
   return (
     <section
       id="contact"
@@ -53,51 +44,22 @@ export default function CTA() {
         for your business.
       </motion.p>
 
-      <motion.form
-        action={formAction}
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="relative z-10 mx-auto mt-12 flex max-w-xl flex-col gap-4 text-left"
+        className="relative z-10 mt-12 flex justify-center"
       >
-        <input
-          type="text"
-          name="name"
-          placeholder="Your name"
-          required
-          className="rounded-xl border border-white/10 bg-surface px-5 py-4 text-sm text-text placeholder:text-muted focus:border-accent focus:outline-none"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your email"
-          required
-          className="rounded-xl border border-white/10 bg-surface px-5 py-4 text-sm text-text placeholder:text-muted focus:border-accent focus:outline-none"
-        />
-        <textarea
-          name="message"
-          placeholder="What are you looking to achieve?"
-          required
-          rows={4}
-          className="rounded-xl border border-white/10 bg-surface px-5 py-4 text-sm text-text placeholder:text-muted focus:border-accent focus:outline-none"
-        />
-
-        <button
-          type="submit"
-          disabled={pending}
-          className="mt-2 inline-block rounded-full bg-gradient-to-r from-primary to-accent px-10 py-5 text-sm font-medium tracking-wide text-text transition-transform duration-300 hover:scale-105 disabled:cursor-not-allowed disabled:opacity-60"
+        <a
+          href="https://api.leadconnectorhq.com/widget/booking/66cqZhBSxtjczGA5K7u8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block rounded-full bg-gradient-to-r from-primary to-accent px-10 py-5 text-sm font-medium tracking-wide text-text transition-transform duration-300 hover:scale-105"
         >
-          {pending ? "Sending..." : "Book Your Free Consultation"}
-        </button>
-
-        {state.status === "success" && (
-          <p className="text-sm font-light text-highlight">{state.message}</p>
-        )}
-        {state.status === "error" && (
-          <p className="text-sm font-light text-red-400">{state.message}</p>
-        )}
-      </motion.form>
+          Book Your Free Consultation
+        </a>
+      </motion.div>
     </section>
   );
 }

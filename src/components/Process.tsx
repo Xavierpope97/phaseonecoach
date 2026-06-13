@@ -5,27 +5,21 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "01",
-    title: "Discover",
+    title: "Start",
     description:
       "We start with a deep diagnostic — your goals, blind spots, and the gap between where you are and where you need to be.",
   },
   {
     number: "02",
-    title: "Design",
+    title: "Build",
     description:
-      "A clear plan built around your specific stage, challenges, timeline, and definition of success.",
+      "A clear plan and the systems to back it up — built around your specific stage, challenges, timeline, and definition of success.",
   },
   {
     number: "03",
-    title: "Execute",
+    title: "Scale",
     description:
-      "Hands-on sessions, real-time feedback, and accountability systems that turn the plan into consistent action.",
-  },
-  {
-    number: "04",
-    title: "Elevate",
-    description:
-      "We measure, refine, and adjust — making sure your business is set up to grow into its next stage.",
+      "Hands-on support, real-time feedback, and the roadmap to grow into your business's next stage.",
   },
 ];
 
@@ -60,7 +54,7 @@ export default function Process() {
             className="absolute left-6 top-0 h-full w-px origin-top bg-gradient-to-b from-primary via-accent to-highlight md:hidden"
           />
 
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-4 md:gap-8">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
             {steps.map((step, i) => (
               <motion.div
                 key={step.number}

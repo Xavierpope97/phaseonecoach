@@ -8,19 +8,16 @@ const testimonials = [
     quote:
       "I had an idea and no clue where to start. Phase One helped me turn it into an actual business plan — and three months later I had my first paying customers.",
     name: "Sarah Chen",
-    title: "Founder, Northwind Goods",
   },
   {
     quote:
       "We'd been running for two years but felt stuck. Phase One gave us a clear roadmap and helped us finally build systems that don't depend on us doing everything.",
     name: "Marcus Reyes",
-    title: "Co-Founder, Halcyon Studio",
   },
   {
     quote:
       "The clarity we got from working with Phase One was worth more than any advice we'd gotten before. We finally know what to focus on next.",
     name: "Priya Anand",
-    title: "Owner, Verge Coffee Co.",
   },
 ];
 
@@ -71,9 +68,6 @@ export default function Testimonials() {
               <div className="mt-8">
                 <p className="font-display text-lg font-bold text-highlight">
                   {current.name}
-                </p>
-                <p className="font-light text-sm uppercase tracking-[0.2em] text-muted">
-                  {current.title}
                 </p>
               </div>
             </motion.div>

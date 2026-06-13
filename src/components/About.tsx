@@ -5,7 +5,7 @@ import Counter from "./Counter";
 
 const stats = [
   { value: 150, suffix: "+", label: "Startups Guided" },
-  { value: 8, suffix: "", label: "Years Helping Founders" },
+  { value: 5, suffix: "", label: "Years Helping Founders" },
   { value: 40, suffix: "+", label: "Industries Served" },
   { value: 95, suffix: "%", label: "Client Satisfaction" },
 ];

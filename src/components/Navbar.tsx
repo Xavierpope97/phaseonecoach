@@ -33,9 +33,9 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
         <a
           href="#"
-          className="font-display text-2xl font-black tracking-tight text-text"
+          className="font-display text-xl font-black tracking-tight text-text md:text-2xl"
         >
-          PHASE ONE<span className="text-accent">.</span>
+          Phase One<span className="text-accent"> Coaching</span>
         </a>
 
         <ul className="hidden items-center gap-10 md:flex">
@@ -52,7 +52,9 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="#contact"
+          href="https://api.leadconnectorhq.com/widget/booking/66cqZhBSxtjczGA5K7u8"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group relative hidden overflow-hidden rounded-full border border-primary px-6 py-2.5 text-sm font-medium tracking-wide text-text md:inline-block"
         >
           <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-primary to-accent transition-transform duration-500 ease-out group-hover:translate-x-0" />
@@ -100,7 +102,9 @@ export default function Navbar() {
               ))}
               <li>
                 <a
-                  href="#contact"
+                  href="https://api.leadconnectorhq.com/widget/booking/66cqZhBSxtjczGA5K7u8"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setOpen(false)}
                   className="inline-block rounded-full border border-primary px-6 py-2.5 text-sm font-medium tracking-wide text-text"
                 >
