@@ -33,7 +33,7 @@ export default function FreeGuidePage() {
         />
 
         <p className="relative z-10 mb-6 font-display text-sm font-bold uppercase tracking-[0.3em] text-accent">
-          Free Guide
+          Free Resources
         </p>
 
         <h1 className="relative z-10 mx-auto max-w-4xl font-display text-[clamp(36px,7vw,88px)] font-black leading-[1.05] tracking-tight">
