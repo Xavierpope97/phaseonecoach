@@ -11,6 +11,8 @@ export async function sendLeadMagnetEmail(name: string, email: string) {
   }
 
   const downloadUrl = `${SITE_URL}/downloads/21-money-traps.pdf`;
+  const bookingUrl =
+    "https://api.leadconnectorhq.com/widget/booking/66cqZhBSxtjczGA5K7u8";
 
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
@@ -24,15 +26,22 @@ export async function sendLeadMagnetEmail(name: string, email: string) {
       subject: "Your guide: 21 Money Traps That Kill First-Time Businesses",
       html: `
         <div style="font-family: sans-serif; max-width: 480px; margin: 0 auto;">
-          <h2>Hey ${name.split(" ")[0]},</h2>
-          <p>Thanks for requesting your free copy of <strong>21 Money Traps That Kill First-Time Businesses Before They Start</strong>.</p>
-          <p>You can download it here:</p>
+          <h2>Thanks, ${name.split(" ")[0]}!</h2>
+          <p>Your copy of <strong>21 Money Traps That Kill First-Time Businesses Before They Start</strong> is ready.</p>
           <p>
             <a href="${downloadUrl}" style="display: inline-block; background: #7c3aed; color: #fff; padding: 12px 24px; border-radius: 999px; text-decoration: none; font-weight: bold;">
               Download Your Guide
             </a>
           </p>
-          <p>If you have any questions about your business's next move, just reply to this email.</p>
+          <hr style="border: none; border-top: 1px solid #e5e5e5; margin: 32px 0;" />
+          <h3>Want help putting it into action?</h3>
+          <p>Reading the guide is step one — the founders who move fastest are the ones who get a second set of eyes on their plan early. If you haven't already, grab a free consultation and we'll walk through your specific situation and what to focus on next.</p>
+          <p>
+            <a href="${bookingUrl}" style="display: inline-block; background: transparent; color: #7c3aed; border: 2px solid #7c3aed; padding: 10px 22px; border-radius: 999px; text-decoration: none; font-weight: bold;">
+              Book Your Free Consultation
+            </a>
+          </p>
+          <p>If you have any questions in the meantime, just reply to this email.</p>
           <p>— Phase One Coaching</p>
         </div>
       `,
