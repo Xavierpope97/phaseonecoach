@@ -1,14 +1,14 @@
 .quiz-root {
-  --ink: #f5f0ff;
-  --ink-soft: #c4b8e0;
-  --parchment: #0a0010;
-  --parchment-dim: #120020;
-  --ember: #a855f7;
-  --ember-dark: #7c3aed;
+  --ink: #1a0a2e;
+  --ink-soft: #3d2b5e;
+  --parchment: #fafafa;
+  --parchment-dim: #f0ebff;
+  --ember: #7c3aed;
+  --ember-dark: #5b21b6;
   --slate: #6b6080;
   --success: #3F6B4A;
-  --line: #2a1a3e;
-  --white: #120020;
+  --line: #ddd6f3;
+  --white: #ffffff;
 
   background: var(--parchment);
   color: var(--ink);
