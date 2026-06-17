@@ -28,7 +28,7 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled ? "glass border-b border-white/5" : "bg-transparent"
+        scrolled ? "glass border-b border-black/10" : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
@@ -56,10 +56,10 @@ export default function Navbar() {
           href="https://api.leadconnectorhq.com/widget/booking/66cqZhBSxtjczGA5K7u8"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative hidden overflow-hidden rounded-full border border-primary px-6 py-2.5 text-sm font-medium tracking-wide text-text md:inline-block"
+          className="group relative hidden overflow-hidden rounded-full border border-primary px-6 py-2.5 text-sm font-medium tracking-wide text-primary md:inline-block"
         >
           <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-primary to-accent transition-transform duration-500 ease-out group-hover:translate-x-0" />
-          <span className="relative z-10">Book a Call</span>
+          <span className="relative z-10 transition-colors duration-300 group-hover:text-white">Book a Call</span>
         </a>
 
         <button
@@ -87,7 +87,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="glass border-b border-white/5 md:hidden"
+            className="glass border-b border-black/10 md:hidden"
           >
             <ul className="flex flex-col gap-6 px-6 py-8">
               {links.map((link) => (
@@ -107,7 +107,7 @@ export default function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setOpen(false)}
-                  className="inline-block rounded-full border border-primary px-6 py-2.5 text-sm font-medium tracking-wide text-text"
+                  className="inline-block rounded-full border border-primary px-6 py-2.5 text-sm font-medium tracking-wide text-primary"
                 >
                   Book a Call
                 </a>

@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0010;
-  --surface: #120020;
+  --background: #fafafa;
+  --surface: #f0ebff;
   --primary: #7c3aed;
   --accent: #a855f7;
-  --highlight: #e879f9;
-  --text: #f5f0ff;
+  --highlight: #9333ea;
+  --text: #1a0a2e;
   --muted: #6b6080;
 }
 
@@ -91,5 +91,5 @@ body {
 
 .glass {
   backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(18, 0, 32, 0.55);
+  background-color: rgba(250, 245, 255, 0.88);
 }

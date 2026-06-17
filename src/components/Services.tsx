@@ -81,13 +81,13 @@ export default function Services() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.7, delay: i * 0.12 }}
               whileHover={{ y: -8 }}
-              className="group relative flex flex-col justify-between gap-8 rounded-2xl border border-white/10 bg-surface p-8 transition-colors duration-300 hover:border-accent/60"
+              className="group relative flex flex-col justify-between gap-8 rounded-2xl border border-primary/15 bg-surface p-8 transition-colors duration-300 hover:border-accent/60"
             >
               <div
                 className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                 style={{
                   background:
-                    "radial-gradient(140% 140% at 0% 0%, rgba(168,85,247,0.18) 0%, rgba(10,0,16,0) 60%)",
+                    "radial-gradient(140% 140% at 0% 0%, rgba(168,85,247,0.18) 0%, rgba(250,250,250,0) 60%)",
                 }}
               />
               <div className="relative z-10 text-accent">{service.icon}</div>

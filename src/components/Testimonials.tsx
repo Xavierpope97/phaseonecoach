@@ -43,7 +43,7 @@ export default function Testimonials() {
         className="pointer-events-none absolute -right-40 top-1/2 h-[40vw] w-[40vw] -translate-y-1/2 rounded-full"
         style={{
           background:
-            "radial-gradient(circle, rgba(124,58,237,0.3) 0%, rgba(10,0,16,0) 70%)",
+            "radial-gradient(circle, rgba(124,58,237,0.3) 0%, rgba(250,250,250,0) 70%)",
           filter: "blur(60px)",
         }}
       />

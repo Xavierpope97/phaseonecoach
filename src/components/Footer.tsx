@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/5 px-6 py-12 md:px-10">
+    <footer className="relative border-t border-black/10 px-6 py-12 md:px-10">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row">
         <a href="#" className="font-display text-xl font-black tracking-tight">
           Phase One<span className="text-accent"> Coaching</span>

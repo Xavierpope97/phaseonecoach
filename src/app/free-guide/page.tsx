@@ -27,7 +27,7 @@ export default function FreeGuidePage() {
           className="pointer-events-none absolute left-1/2 top-1/3 h-[60vw] w-[60vw] max-w-[900px] -translate-x-1/2 -translate-y-1/2 rounded-full"
           style={{
             background:
-              "radial-gradient(circle, rgba(232,121,249,0.3) 0%, rgba(124,58,237,0.2) 40%, rgba(10,0,16,0) 70%)",
+              "radial-gradient(circle, rgba(232,121,249,0.3) 0%, rgba(124,58,237,0.2) 40%, rgba(250,250,250,0) 70%)",
             filter: "blur(60px)",
           }}
         />

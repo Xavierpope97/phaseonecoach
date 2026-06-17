@@ -18,7 +18,7 @@ export default function CTA() {
         className="pointer-events-none absolute left-1/2 top-1/2 h-[50vw] w-[50vw] max-w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full"
         style={{
           background:
-            "radial-gradient(circle, rgba(232,121,249,0.3) 0%, rgba(124,58,237,0.2) 40%, rgba(10,0,16,0) 70%)",
+            "radial-gradient(circle, rgba(232,121,249,0.3) 0%, rgba(124,58,237,0.2) 40%, rgba(250,250,250,0) 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -55,7 +55,7 @@ export default function CTA() {
           href="https://api.leadconnectorhq.com/widget/booking/66cqZhBSxtjczGA5K7u8"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block rounded-full bg-gradient-to-r from-primary to-accent px-10 py-5 text-sm font-medium tracking-wide text-text transition-transform duration-300 hover:scale-105"
+          className="inline-block rounded-full bg-gradient-to-r from-primary to-accent px-10 py-5 text-sm font-medium tracking-wide text-white transition-transform duration-300 hover:scale-105"
         >
           Book Your Free Consultation
         </a>

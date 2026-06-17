@@ -13,7 +13,7 @@ export default function Marquee() {
   const track = [...items, ...items];
 
   return (
-    <section className="relative border-y border-white/5 bg-surface py-6">
+    <section className="relative border-y border-black/10 bg-surface py-6">
       <div className="marquee-track w-max">
         {track.map((item, i) => (
           <div
