@@ -1,7 +1,7 @@
 "use server";
 
 import { createSupabaseClient } from "@/lib/supabase";
-import { sendLeadMagnetEmail } from "@/lib/email";
+import { sendLeadMagnetEmail, sendAdminNotification } from "@/lib/email";
 
 export type ContactFormState = {
   status: "idle" | "success" | "error";
@@ -32,6 +32,11 @@ export async function submitContactForm(
       message: "Something went wrong. Please try again.",
     };
   }
+
+  sendAdminNotification({
+    subject: "New contact form submission — phaseonecoach.com",
+    body: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+  }).catch(() => {});
 
   return { status: "success", message: "Thanks — we'll be in touch soon." };
 }
@@ -74,6 +79,11 @@ export async function submitLeadMagnetForm(
         "You're on the list, but the email failed to send. We'll follow up shortly.",
     };
   }
+
+  sendAdminNotification({
+    subject: "New lead magnet signup — phaseonecoach.com",
+    body: `Name: ${name}\nEmail: ${email}`,
+  }).catch(() => {});
 
   return {
     status: "success",

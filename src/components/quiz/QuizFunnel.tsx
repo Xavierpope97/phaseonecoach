@@ -198,6 +198,15 @@ export default function QuizFunnel() {
     if (data) setLeadId(data.id);
     setSubmitting(false);
 
+    fetch("/api/notify", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        subject: "New quiz lead — phaseonecoach.com",
+        body: `Name: ${contact.name || "(not provided)"}\nEmail: ${contact.email}\nPhone: ${contact.phone || "(not provided)"}\n\nResult: ${CONTENT[key].program} (Phase ${CONTENT[key].phase})\nStage: ${answers.stage}\nBlocker: ${answers.blocker}`,
+      }),
+    }).catch(() => {});
+
     const elapsed = Date.now() - loadingStart;
     setTimeout(() => goTo("results"), Math.max(0, 1400 - elapsed));
   }
